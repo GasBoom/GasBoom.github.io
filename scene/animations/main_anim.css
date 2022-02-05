@@ -1,0 +1,32 @@
+@keyframes color-fadeIn-anime {
+  0% {
+    width: 0;
+    font-size: 0;
+    transform: scaleX(0%);
+  }
+  100% {
+    transform: scaleX(100%);
+  }
+}
+
+@keyframes btn-fade-in {
+  0% {
+    font-size: 0;
+    transform: translateX(-100px) scaleX(0%);
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scaleX(100%);
+  }
+}
+
+@keyframes notice-img-fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

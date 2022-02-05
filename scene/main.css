@@ -1,3 +1,5 @@
+@import url(animations/main_anim.css);
+
 header {
   font-size: 55px;
   font-weight: lighter;
@@ -5,53 +7,45 @@ header {
   text-align: center;
   text-decoration: underline;
 }
+
 body {
   background-color: #f2f2f2;
 }
 
-@keyframes color-fadeIn-anime {
-  0% {
-    width: 0;
-    font-size: 0;
-    transform: scaleX(0%);
-  }
-  100% {
-    transform: scaleX(100%);
-  }
-}
-@keyframes btn-fade-in {
-  0% {
-    font-size: 0;
-    transform: translateX(-100px) scaleX(0%);
-  }
-  50% {
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) scaleX(100%);
-  }
+.main-notice__parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-notice {
-  width: 100;
-  height: 43vh;
-  border-radius: 30px;
+.notice-child {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
   background-color: #a6826d;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 30px;
+  margin: 1px 5px;
   animation: color-fadeIn-anime 0.5s ease;
 }
 
+.notice-img {
+  width: 30vw;
+  height: 30vh;
+  animation: notice-img-fadeInOut 2 ease-in-out;
+}
+
 .menu-btns {
-  margin: 20px 20px;
-  /* background-color: #518ea6; */
+  padding: 5px 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-btns__category {
   border: none;
+  font-size: 55%;
   width: 15vw;
   height: 5vh;
   margin: 10px 10px;
@@ -64,7 +58,9 @@ body {
   background-color: #8c5f37;
   color: white;
   transition: width 0.5s ease;
+  text-decoration: underline;
 }
+
 .menu-btns__category:not(:hover) {
   width: 15vw;
   transition: width 0.5s ease;
