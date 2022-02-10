@@ -1,59 +1,47 @@
 @import url(animations/main_anim.css);
 
-header {
-  font-size: 55px;
+
+
+
+.menu-top__title {  
   font-weight: lighter;
   color: #593825;
-  text-align: center;
-  text-decoration: underline;
+  text-align: center;  
+  font-size: 5vw;  
+  width: 100vw;
+  margin-top: 20px;
 }
+
 
 body {
   background-color: #f2f2f2;
 }
 
-.main-notice__parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.top-container{
+  width: 100vw;
+  border-bottom-style:groove;
+
 }
 
-.notice-child {
-  width: 350px;
-  height: 350px;
-  border-radius: 5px;
-  background-color: #a6826d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1px 5px;
-  animation: color-fadeIn-anime 0.5s ease;
-}
-
-.notice-img {
-  width: 30vw;
-  height: 30vh;
-  animation: notice-img-fadeInOut 2 ease-in-out;
-}
-
-.menu-btns {
+.menu-nav {
   padding: 5px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu-btns__category {
-  border: none;
-  font-size: 55%;
-  width: 15vw;
-  height: 5vh;
+
+.menu-nav__btn {
+  border: none;  
+  width: 25%;
+  height: 2.5vh;
   margin: 10px 10px;
   background-color: #a6826d;
   border-radius: 30px;
 }
 
-.menu-btns__category:hover {
+
+.menu-nav__btn:hover {
   width: 25vw;
   background-color: #8c5f37;
   color: white;
@@ -61,19 +49,55 @@ body {
   text-decoration: underline;
 }
 
-.menu-btns__category:not(:hover) {
+
+.menu-nav__btn:not(:hover) {
   width: 15vw;
   transition: width 0.5s ease;
 }
-.menu-btns__category:first-child {
+
+
+.menu-nav__btn:first-child {
   animation: btn-fade-in 0.25s ease-in;
 }
-.menu-btns__category:nth-child(2) {
+
+
+.menu-nav__btn:nth-child(2) {
   animation: btn-fade-in 0.25s ease-in;
 }
-.menu-btns__category:nth-child(3) {
+
+
+.menu-nav__btn:nth-child(3) {
   animation: btn-fade-in 0.25s ease-in;
 }
-.menu-btns__category:last-child {
+
+
+.menu-nav__btn:last-child {
   animation: btn-fade-in 0.25s ease-in;
+}
+
+
+.main-picture__menu{
+  display: flex;
+  justify-content: center;
+  height: 55vw;
+}
+
+.picture-menu__btn{
+  width: 25%;
+  height: 55%;
+  background-color: #a6826d;
+  padding: 30px 10px;
+  margin: 10px 10px;
+  border-style: none;
+}
+.picture-menu__btn:not(:hover){
+  opacity: 0.7;
+}
+.picture-menu__btn :hover{
+  opacity: 1;
+}
+.effect-panel{
+  width: 100%;
+  height: 100%;
+  
 }
