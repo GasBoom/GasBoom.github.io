@@ -1,26 +1,21 @@
 @import url(animations/main_anim.css);
 
-
-
-
-.menu-top__title {  
+.menu-top__title {
   font-weight: lighter;
   color: #593825;
-  text-align: center;  
-  font-size: 5vw;  
+  text-align: center;
+  font-size: 5vw;
   width: 100vw;
   margin-top: 20px;
 }
-
 
 body {
   background-color: #f2f2f2;
 }
 
-.top-container{
+.top-container {
   width: 100vw;
-  border-bottom-style:groove;
-
+  border-bottom-style: groove;
 }
 
 .menu-nav {
@@ -30,16 +25,14 @@ body {
   align-items: center;
 }
 
-
 .menu-nav__btn {
-  border: none;  
+  border: none;
   width: 25%;
   height: 2.5vh;
   margin: 10px 10px;
   background-color: #a6826d;
   border-radius: 30px;
 }
-
 
 .menu-nav__btn:hover {
   width: 25vw;
@@ -49,55 +42,71 @@ body {
   text-decoration: underline;
 }
 
-
 .menu-nav__btn:not(:hover) {
   width: 15vw;
   transition: width 0.5s ease;
 }
 
-
 .menu-nav__btn:first-child {
   animation: btn-fade-in 0.25s ease-in;
 }
-
 
 .menu-nav__btn:nth-child(2) {
   animation: btn-fade-in 0.25s ease-in;
 }
 
-
 .menu-nav__btn:nth-child(3) {
   animation: btn-fade-in 0.25s ease-in;
 }
-
 
 .menu-nav__btn:last-child {
   animation: btn-fade-in 0.25s ease-in;
 }
 
-
-.main-picture__menu{
+.main-picture__menu {
   display: flex;
   justify-content: center;
-  height: 55vw;
+  position: relative;
+  height: 35vw;
 }
 
-.picture-menu__btn{
+.picture-menu__btn {
+  position: relative;
   width: 25%;
-  height: 55%;
+  height: 100%;
   background-color: #a6826d;
-  padding: 30px 10px;
-  margin: 10px 10px;
+  padding: 0px 10px;
+  margin: 0px 10px;
   border-style: none;
 }
-.picture-menu__btn:not(:hover){
-  opacity: 0.7;
+
+.effect-panel {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  opacity: 0.5;
+  background-color: black;
+  pointer-events: none;
+  font-size: 30px;
+
+  text-align: right;
+  vertical-align: bottom;
+  color: aliceblue;
 }
-.picture-menu__btn :hover{
-  opacity: 1;
-}
-.effect-panel{
+.picture-panel {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
-  
+}
+.picture-panel:hover ~ .effect-panel {
+  height: 20%;
+  transition: height 0.25s ease-in-out;
+}
+
+.picture-panel:not(:hover) ~ .effect-panel {
+  height: 100%;
+  transition: height 0.25s ease-in-out;
 }

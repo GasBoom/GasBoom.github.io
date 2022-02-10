@@ -30,3 +30,12 @@
     opacity: 1;
   }
 }
+
+@keyframes effect-panel-out {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
