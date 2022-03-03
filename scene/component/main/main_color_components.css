@@ -1,0 +1,23 @@
+h1{
+    background-color: #344059;
+}
+
+#top_banner_menu{
+    background-color: #596A8E;
+}
+
+.menu_btn{    
+    background-color: #9AB4EA;
+    border-radius: 15px;
+}
+.menu_btn:hover{
+    background-color: #7390CD;
+}
+
+.middle_banner__menu{
+
+}
+.midde_menu_panel{
+    background-color: #7390CD;
+
+}

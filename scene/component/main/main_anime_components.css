@@ -1,0 +1,27 @@
+@keyframes menu_btn_anime_out{
+    from{
+        width: 130px;
+    }
+    to{
+        width: 100px;
+    }
+}
+@keyframes menu_btn_anime_in{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 130px;
+    }
+}
+
+
+.menu_btn:hover{
+    width: 130px;
+    transition: width 0.25s ease-in-out;
+}
+
+.menu_btn:not(hover){
+    width: 100px;
+    transition: width 0.25s ease-in-out;
+}

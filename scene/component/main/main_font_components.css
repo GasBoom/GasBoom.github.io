@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body{
+    font-family: 'Russo One', sans-serif;
+    font-size: 23px;
+    color: white;
+    text-align: left;    
+}
+
+.menu_btn{
+    text-align: center;
+    
+}
